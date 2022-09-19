@@ -1,17 +1,20 @@
 import { useState } from "react";
 import { useContext } from "react";
 import { createContext } from "react";
+import { STORAGE_KEY_USER } from "../const/storageKeys";
+import { storageRead } from "../utils/storage";
 
-// xontext -> exposing
+// context -> exposing
 const UserContext = createContext()
 
 export const useUser = () => {
     return useContext(UserContext) // { user, setUser }
 }
 
+// Provider -> managing state
 const UserProvider = ({ children }) => {
     
-    const [ user, setUser ] = useState(null)
+    const [ user, setUser ] = useState( storageRead(STORAGE_KEY_USER))
     
     const state = {
         user,
