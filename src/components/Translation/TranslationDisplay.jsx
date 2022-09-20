@@ -6,7 +6,8 @@ const TranslationDisplay = ({translationText}) => {
         <>
             {letterArray.map((character) =>(
               <img src = {`../pictures/individual_signs${character}.png`}
-              alt={character}/>
+              alt={character}
+              width="20px"/>
             ))}
         </>
       );
