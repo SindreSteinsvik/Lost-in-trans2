@@ -12,6 +12,7 @@ import { storageSave } from "../utils/storage"
 const Profile = () => {
 
     const { user, setUser } = useUser()
+    
 
     useEffect(() => {
         const findUser = async () => {
@@ -28,8 +29,8 @@ const Profile = () => {
         <>
             <h1>Profile</h1>
             <ProfileHeader username={user.username} />
-            <ProfileActions />
-            <ProfileTranslationHistory translations={user.translations} />
+            <ProfileActions/>
+            <ProfileTranslationHistory translations={user.translations.slice(-10)} />
         </>
     )
 }
