@@ -1,11 +1,13 @@
 import { useForm } from "react-hook-form"
 
+/*
 const translateConfig = {
     required: true,
     minLength: 1,
     regex: /^[a-zA-Z]+$/,
     fix: (text) => text.toLowerCase().trim()
 }
+*/
 
 
 const TranslateForm = ({onTranslate}) => {
