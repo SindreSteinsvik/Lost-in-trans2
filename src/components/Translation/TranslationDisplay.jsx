@@ -2,7 +2,7 @@ import { nanoid } from "nanoid";
 
 const TranslationDisplay = ({translationText}) => {
 
-    const letterArray = translationText.split("")
+    const letterArray = translationText.replace(/\s+/g, "").split("")
 
     return (
         <>
