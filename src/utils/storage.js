@@ -6,7 +6,7 @@ const validateKey = key => {
 
 export const storageSave = (key, value) => {
 
-    //validateKey(key)
+    validateKey(key)
 
     if(!value){
         throw new Error('storageSave: No value provided for ' + key)
@@ -17,7 +17,7 @@ export const storageSave = (key, value) => {
 
 export const storageRead = key => {
 
-    //validateKey(key)
+    validateKey(key)
 
     const data = sessionStorage.getItem(key)
     if (data){
@@ -28,6 +28,6 @@ export const storageRead = key => {
 }
 
 export const storageDelete = key => {
-    //validateKey(key)
+    validateKey(key)
     sessionStorage.removeItem(key)
     }

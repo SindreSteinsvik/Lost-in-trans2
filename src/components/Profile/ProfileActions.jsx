@@ -19,12 +19,13 @@ const ProfileActions = () => {
     
 
     const handleClearHistoryClick = async () => {
+        // din kødd!
         if(!window.confirm('Are you sure?\nThis cannot be undone!')){
             return
         }
 
         console.log(user.id)
-        const [clearError, result] = await translationClearHistory(user.id)
+        const [clearError] = await translationClearHistory(user.id)
         
         if(clearError !== null){
             return
