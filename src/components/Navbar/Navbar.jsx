@@ -1,4 +1,5 @@
 import Container from 'react-bootstrap/Container';
+import { Col, Row } from "react-bootstrap";
 
 import { NavLink } from "react-router-dom"
 import { useUser } from "../../context/UserContext"
@@ -25,10 +26,10 @@ const Navbar = () => {
             { user !== null &&
                 <ul>
                     <li>
-                    <NavLink to='/translation' className="navbar">Translation</NavLink>
+                    <NavLink to='/profile' className="navbar">Profile</NavLink>
                     </li>
                     <li>
-                    <NavLink to='/profile' className="navbar">Profile</NavLink>
+                    <NavLink to='/translation' className="navbar">Translation</NavLink>
                     </li>
                 </ul>
             }

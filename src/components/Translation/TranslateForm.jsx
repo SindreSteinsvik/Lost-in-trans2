@@ -3,8 +3,7 @@ import { useForm } from "react-hook-form"
 
 const translateConfig = {
     required: true,
-    regex: /^[a-zA-Z]+$/,
-    fix: (text) => text.trim()
+    pattern: /^[a-zA-Z\\ ]+$/
 }
 
 
@@ -15,7 +14,7 @@ const TranslateForm = ({onTranslate}) => {
     const onSubmit = ({word}) => { onTranslate(word) }
 
     const errorMessage = (() => {
-        if(errors.word?.type === "regex") {
+        if(errors.word?.type === "pattern") {
             return <span> Error: only letters</span>
         }
     })()
@@ -24,12 +23,12 @@ const TranslateForm = ({onTranslate}) => {
 return (
     <form onSubmit={ handleSubmit(onSubmit)}>
         <fieldset>
-            <label htmlFor="theWord">Type your word: </label>
-            <input type="text" {...register('word', translateConfig)} placeholder="Your word"></input>
+            <label className="font1" htmlFor="theWord">Type your word: </label>
+            <input type="text" className="font1" {...register('word', translateConfig)} placeholder="Your word"></input>
             {errorMessage}
         </fieldset>
 
-        <button type="submit">Translate</button>
+        <button type="submit" className="button">Translate</button>
     </form>
 )
 

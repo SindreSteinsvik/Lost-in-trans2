@@ -1,9 +1,7 @@
-import {Link} from "react-router-dom"
 import { translationClearHistory } from "../../api/translate"
 import { STORAGE_KEY_USER } from "../../const/storageKeys"
 import { useUser } from "../../context/UserContext"
 import { storageDelete, storageSave } from "../../utils/storage"
-
 
 const ProfileActions = () => {
 
@@ -41,9 +39,8 @@ const ProfileActions = () => {
 
     return (
         <ul>
-            <li><Link to="/translation">Translation</Link></li>
-            <li><button onClick = {handleClearHistoryClick}>Clear History</button></li>
-            <li><button onClick = {handleLogoutClick}>Logout</button></li>
+            <li><button className="button2" onClick = {handleClearHistoryClick}>Clear History</button></li>
+            <li><button className="button2" onClick = {handleLogoutClick}>Logout</button></li>
            
         </ul>
     )
