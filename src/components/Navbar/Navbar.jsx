@@ -1,3 +1,5 @@
+import Container from 'react-bootstrap/Container';
+
 import { NavLink } from "react-router-dom"
 import { useUser } from "../../context/UserContext"
 
@@ -6,23 +8,32 @@ const Navbar = () => {
     const { user } = useUser()
 
     return (
-        <nav>
+        <div className='heading'>
+            <Container>
+                <ul>
+                <img
+                  alt=""
+                  src="/pictures/Logo.png"
+                  width="100"
+                  height="100"
+                />
+                </ul>
             <ul>
-                <li>Translations</li>
+                <h1 className='heading'>Lost in Translation</h1>
             </ul>
 
             { user !== null &&
                 <ul>
                     <li>
-                    <NavLink to='/translation'>Translation</NavLink>
+                    <NavLink to='/translation' className="navbar">Translation</NavLink>
                     </li>
                     <li>
-                    <NavLink to='/profile'>Profile</NavLink>
+                    <NavLink to='/profile' className="navbar">Profile</NavLink>
                     </li>
                 </ul>
             }
-
-        </nav>
+            </Container>
+            </div>
     )
 }
 

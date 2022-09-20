@@ -1,0 +1,19 @@
+/*HEADINGS (Love Ya Like A Sister*/
+@import url(https://fonts.google.com/specimen/Love+Ya+Like+A+Sister?query=Love+Ya+Like+a+sister);
+
+/*BODY TEXT (Sanchez)*/
+@import url(https://fonts.google.com/specimen/Sanchez?query=Sanchez);
+
+
+.heading{
+    font-family: 'Love Ya Like A Sister', sans-serif;
+    background-color: #E7B355;
+    color: #EFEFEF;
+}
+
+.navbar{
+    font-family: 'Love Ya Like A Sister', sans-serif;
+    font-size: 30px !important;
+    background-color: #E7B355;
+    color: #EFEFEF;
+}
