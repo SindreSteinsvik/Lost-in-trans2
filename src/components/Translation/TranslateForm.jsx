@@ -1,12 +1,18 @@
 import { useForm } from "react-hook-form"
 
-const TranslateForm = () => {
+const translateConfig = {
+    required: true,
+    minLength: 1,
+    regex: /^[a-zA-Z]+$/,
+    fix: (text) => text.toLowerCase().trim()
+}
+
+
+const TranslateForm = ({onTranslate}) => {
+
     const { register, handleSubmit} = useForm()
 
-    const onSubmit = data => {
-        console.log(data)
-    }
-
+    const onSubmit = ({word}) => { onTranslate(word) }
 
 return (
     <form onSubmit={ handleSubmit(onSubmit)}>
