@@ -7,7 +7,7 @@ const ProfileTranslationHistory = ({translations}) => {
 
     return (
         <section>
-            <h4>Your translation history</h4>
+            <h4 className="font1">Your translation history</h4>
 
             {translationList.length === 0 && <p>Translation history empty</p>}
             

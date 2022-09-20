@@ -28,7 +28,7 @@ const Translation = () => {
 
     return (
         <>
-            <h1>Translation</h1>
+            <h1 className="font1">Translation</h1>
             <section id="translationText">
                 <TranslateForm onTranslate={handleTranslateClick} />
             </section>
