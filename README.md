@@ -1,3 +1,29 @@
+# Assignment 5 - Lost in Translation
+
+## Description
+
+### Login:
+    - Login with username
+    - Simple navigation bar
+
+### Translation Page
+    - Type word to translate
+    - Get the translation
+    - Navbar with link to profile and translation page
+
+### Profile
+    - Clear History button
+    - Logout button
+    - Translation history
+        - max 10 entries
+    - Navbar with link to profile and translation page
+
+## Contributors
+# Markus Dybedal
+# Sindre Steinsvik
+</br>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
