@@ -5,9 +5,9 @@ const TranslationDisplay = ({translationText}) => {
     return (
         <>
             {letterArray.map((character) =>(
-              <img src = {`../pictures/individual_signs${character}.png`}
+              <img src = {`/pictures/individual_signs/${character}.png`}
               alt={character}
-              width="20px"/>
+              width="80px"/>
             ))}
         </>
       );
