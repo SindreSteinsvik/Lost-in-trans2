@@ -13,34 +13,3 @@ code {
     monospace;
 }
 */
-
-.yellow{
-  color: #FFC75F;
-  background-color: #FFC75F;
-}
-
-.yellow_dark{
-  color:#E7B355;
-  background-color: #E7B355;
-}
-
-.purple{
-  color: #845EC2;
-  background-color: #845EC2;
-}
-
-.light_grey{
-  /*
-  Inputs
-  */
-  color: #EFEFEF;
-  background-color: #EFEFEF;
-}
-
-.grey{
-  /*
-  Text
-  */
-  color: #969696;
-  background-color: #969696;
-}
