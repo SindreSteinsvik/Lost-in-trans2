@@ -1,3 +1,5 @@
+import { nanoid } from "nanoid";
+
 const TranslationDisplay = ({translationText}) => {
 
     const letterArray = translationText.split("")
@@ -7,7 +9,9 @@ const TranslationDisplay = ({translationText}) => {
             {letterArray.map((character) =>(
               <img src = {`/pictures/individual_signs/${character}.png`}
               alt={character}
-              width="80px"/>
+              width="80px"
+              key={nanoid()}
+              />
             ))}
         </>
       );

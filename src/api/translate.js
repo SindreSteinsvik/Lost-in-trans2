@@ -19,22 +19,24 @@ export const addTranslation = async (user, translation) => {
     return [error.message, null];
   }
 }
+
+
+
 export const translationClearHistory = async (userId) => {
   try {
-    const resp = await fetch(`${apiURL}/${userId}`, {
+    const response = await fetch(`${apiURL}/${userId}`, {
       method: "PATCH",
       headers: createHeaders(),
       body: JSON.stringify({
-        translations: []
-      })
-    })
-    if (!resp.ok) {
-      throw new Error(`Could not delete translations`);
+        translations: [],
+      }),
+    });
+    if (!response.ok) {
+      throw new Error("Could not update translations");
     }
-    const result = await resp.json();
+    const result = await response.json();
     return [null, result];
-  }
-  catch (error) {
+  } catch (error) {
     return [error.message, null];
   }
-}
+};
