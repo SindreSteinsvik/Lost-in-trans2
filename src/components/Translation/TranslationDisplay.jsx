@@ -1,9 +1,9 @@
 const TranslationDisplay = ({character}) => {
     return(
         <>
-        <section>
-            <img src = {`../pictures/individual_signs${character}.png`} alt={character}> </img>
-        </section>
+        
+            <img src = {`../pictures/individual_signs${character}.png`} alt={character}/> 
+        
         </>
     )
 }
