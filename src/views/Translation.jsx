@@ -1,4 +1,5 @@
-import TranslationForm from "../components/Translation/TranslationForm"
+
+import TranslateForm from "../components/Translation/TranslateForm"
 import withAuth from "../hoc/withAuth"
 
 const Translation = () => {
@@ -6,7 +7,7 @@ const Translation = () => {
         <>
             <h1>Translation</h1>
             <section id="translation-text">
-                <TranslationForm />
+                <TranslateForm />
             </section>
         </>
     )
